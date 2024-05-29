@@ -15,9 +15,9 @@
   
   <title>
     
-      Category 
+      思雨 
       
-       : 网站
+      
       |
     
      Red House
@@ -116,75 +116,178 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<div class="container category-details">
-  <div class="content-title">
-    <h2>
-      <span>网站</span>
-    </h2>
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">思雨</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2024-05-29 15:56:25
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="分类"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/" title="个人生活">
+                    <b>#</b> 个人生活
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags mr-10" title="标签"></i>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/%E9%9B%A8%E5%A4%A9/" title="雨天">
+                    #雨天
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>　　清晨起床，就听见窗外淅淅沥沥的声音，夹杂着某不知名的鸟叫声，恰逢今天是周末，不用上班，所以就睡到了自然醒。拉开窗帘看了眼，原来是下雨了。看了眼天气预报，今天这个雨可能还一时半会停不了，在床上爬起来洗漱，吃早饭。</p>
+<p>　　早饭后，就煮了一壶茶，边品茶，边看着窗外，时而大雨倾盆，时而细雨如丝。我是真的享受这一刻的时间，也顺带清理了一下最近的思绪，不用考虑工作上的烦心事（昨天上门客户单位未解决好问题，挺不好意思的）。正如前几天看到的抖音的上面的“毒鸡汤”。我们不必因为自己休息而感到“自我羞愧”，适当的休息也是为了更好的生活和工作。</p>
+<p>　　一生勤劳的中国人好像很难像欧美国家的人们那边，懂得生活和工作的平衡。一切以工作为上，没有工作就焦虑不停，自己剥夺了自己的“自由”。就像是一头蒙眼转圈拉磨的驴子，丝毫不敢有一点点懈怠。不是人们病了，可能是这个社会病了。</p>
+<p>　　</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2024/05/24/46-%E7%BD%91%E7%AB%99%E8%B0%83%E8%AF%95%E5%91%A8%E6%80%BB%E7%BB%93/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2024-05-29 15:56:25
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="分类"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/" title="个人生活">
+                        <b>#</b> 个人生活
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags mr-10" title="标签"></i>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/%E9%9B%A8%E5%A4%A9/" title="雨天">
+                        #雨天
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+
+    
+      <div class="comments-container">
+        
+  <div id="waline-comments"></div>
+
+  <script>
+    function loadWalineSuc(func) {
+      func({
+        el: '#waline-comments',
+        path: location.pathname,
+        serverURL: 'https://talk.hoveco.icu',
+        emoji: false,
+        dark: 'auto',
+        requiredMeta: ['nick', 'mail'],
+        wordLimit: 150,
+        imageUploader: false,
+        search: false,
+        reaction: false,
+        pageSize: 30
+      })
+    }
+  </script>
+
+  
+    <link rel="stylesheet" href="/plugins/waline.css">
+    <script type="module">
+      import { init } from '/plugins/waline.mjs'
+      loadWalineSuc(init)
+    </script>
+  
+
+
+
+
+
+
+
+
+
+      </div>
+    
   </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="网站调试周报">
-        <span class="time-m-d">2024-05-24</span>
-        <a href="/2024/05/24/46-%E7%BD%91%E7%AB%99%E8%B0%83%E8%AF%95%E5%91%A8%E6%80%BB%E7%BB%93/">
-          <span>网站调试周报</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="SSL证书申请">
-        <span class="time-m-d">2024-05-15</span>
-        <a href="/2024/05/15/43-SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/">
-          <span>SSL证书申请</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="网站调试">
-        <span class="time-m-d">2024-05-14</span>
-        <a href="/2024/05/14/42-%E7%BD%91%E7%AB%99%E8%B0%83%E8%AF%95/">
-          <span>网站调试</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="域名备案">
-        <span class="time-m-d">2024-05-13</span>
-        <a href="/2024/05/13/41-%E5%9F%9F%E5%90%8D%E5%A4%87%E6%A1%88/">
-          <span>域名备案</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="服务器调试">
-        <span class="time-m-d">2024-05-12</span>
-        <a href="/2024/05/12/40-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B0%83%E8%AF%95/">
-          <span>服务器调试</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="购买阿里云服务器">
-        <span class="time-m-d">2024-05-11</span>
-        <a href="/2024/05/11/39-%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">
-          <span>购买阿里云服务器</span>
-        </a>
-      </div>
-    </div>
-  
-  <nav class="post-navigation">
-    
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
-</div>
+
 
         
 <div class="footer">
@@ -462,6 +565,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E6%80%9D%E9%9B%A8 + '&url=' + https%3A%2F%2Fhoveco.gitee.io%2F2024%2F05%2F25%2F47-%25E6%2580%259D%25E9%259B%25A8%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://hoveco.gitee.io/2024/05/25/47-%E6%80%9D%E9%9B%A8/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
